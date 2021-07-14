@@ -8,7 +8,7 @@ body{position:relative}.overlay,
 
 .sidebarNavigation .left-navbar-toggle{float:right;margin-right:0;margin-left:15px}
 
-.sideMenu{right:-50%;top:59px;transition:all ease-in-out .25s;overflow:hidden;width:100%;max-width:50%}
+.sideMenu{right:-50%;top:59px;transition:all ease-in-out .6s;overflow:hidden;width:100%;max-width:50%}
 
 .sideMenu.open{right:0;display:block;overflow-y:auto}
 
@@ -41,12 +41,23 @@ padding-bottom: 8px;
   margin-top: 110px;
 }
 
+.current{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  padding: 1rem 1.75rem;
+  padding-right: 15px;
+  padding-left: 0px;
+  letter-spacing: 1.5px;
+  text-decoration-line: underline;
+}
+
 .current-about{
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   padding: 10px 15px;
   text-decoration-line: underline;
 }
+
 
 #logo{
   color:white;
@@ -159,13 +170,13 @@ a:hover{
   margin-top: 60px;
 }
   
-.uxui{
+.subheader{
   color:white;
-  margin-left: 66px;
+  margin-left: 58px;
   margin-top: 27px;
   font-size: 13px;
-  font-weight: 100;
-  letter-spacing: 1.25px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
 }
   
 .fixed-top{
@@ -235,10 +246,23 @@ a:hover{
 .current{
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
+
   padding: 1rem 1.75rem;
   padding-right: 15px;
   padding-left: 0px;
-  text-decoration-line: underline;
+  letter-spacing: 1.5px;
+  text-decoration-line: none;
+}
+
+.current::after {
+  content: "";
+  height: 3px;
+  width: 25%;
+  left: 65%;
+  bottom: 7px;
+  margin-bottom: -0.55px;
+  background: #00bae5;
+  position: absolute;
 }
 
 /*Hamburger menu animation*/
@@ -360,6 +384,79 @@ a:hover{
   padding-bottom: 20px;
 }
 
+@media (min-width: 280px) {
+  
+  .current::after {
+    content: "";
+    height: 3px;
+    width: 31%;
+    left: 56%;
+    position: absolute;
+  }
+}
+
+
+@media (min-width: 320px) {
+ 
+
+  .current::after {
+    content: "";
+    height: 3px;
+    width: 27%;
+    left: 62%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 360px) {
+
+
+  .current::after {
+    content: "";
+    height: 3px;
+    width: 26%;
+    left: 65%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 375px) {
+  
+
+  .current::after {
+    content: "";
+    height: 3px;
+    width: 25%;
+    left: 67%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 411px) {
+
+
+  .current::after {
+    content: "";
+    height: 3px;
+    width: 22%;
+    left: 70%;
+    bottom: 7px;
+    margin-bottom: -0.55px;
+    background: #00bae5;
+    position: absolute;
+  }
+}
+@media (min-width: 540px) {
+.current::after {
+  content: "";
+  height: 3px;
+  width: 16%;
+  left: 78%;
+  position: absolute;
+}
+}
+
+
   /* Desktop navigation */
 @media (min-width: 576px) {
   #lottie{
@@ -371,6 +468,10 @@ a:hover{
     margin-top: 51px;
   }
 }
+
+
+
+
 
 @media (min-width: 768px) {
   .jumbotron h1{
@@ -437,15 +538,15 @@ a:hover{
     color:#414763;
   }
 
-  .uxui{
+  .subheader{
     font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
+    font-weight: 600;
     color:white;
-    margin-left: 60px;
+    margin-left: 53px;
     margin-bottom: 0px;
     margin-top: 23px;
     font-size: 13px;
-    letter-spacing: .75px;
+    letter-spacing: 1px;
   }
 
   #logo{
@@ -636,15 +737,15 @@ a:hover{
     color:white;
 }
 
-.current::after{
-    content:'';
-    height:1.5px;
-    width:66%;
-    left:9%;
-    bottom:12px;
-    margin-bottom: -.5px;
-    background:white;
-    position:absolute;
+.current::after {
+  content: "";
+  height: 1.5px;
+  width: 65%;
+  left: 10%;
+  bottom: 12px;
+  margin-bottom: -0.5px;
+  background: #00bae5;
+  position: absolute;
 }
 
 .current-about{
@@ -685,6 +786,7 @@ a:hover{
   .nav-link {
     padding: 0.55rem 1rem;
   }
+
 }
 
 @media (min-width: 768px) {
