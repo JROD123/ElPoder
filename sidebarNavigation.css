@@ -1,6 +1,16 @@
 body{position:relative}.overlay,
 .sideMenu{position:fixed;bottom:0}
-.overlay{top:0;left:0;opacity:0;right:0%;margin:auto;background-color:rgba(0, 0, 0, 0.825);z-index:998;transition:all ease .4s}
+.overlay{
+  top:0;
+  left:0;
+  opacity:0;
+  right:0%;
+  margin:auto;
+  background-color:rgba(0, 0, 0, 0.825);
+  z-index:998;
+  transition:all ease .4s;
+  pointer-events:none;
+}
 
 .sideMenu,.sidebarNavigation{z-index:999;margin-bottom:0}
 
@@ -29,6 +39,10 @@ body{
   transform: translate3d(0,0,0);
   text-align: center;
   opacity: 1;
+}
+
+.buttontest{
+  z-index: 2;
 }
 
 .jumbotron{
