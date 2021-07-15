@@ -1,6 +1,6 @@
 body{position:relative}.overlay,
 .sideMenu{position:fixed;bottom:0}
-.overlay{top:0;left:0;opacity:0;right:0%;margin:auto;background-color:rgba(0, 0, 0, 0.525);z-index:998;transition:all ease .4s}
+.overlay{top:0;left:0;opacity:0;right:0%;margin:auto;background-color:rgba(0, 0, 0, 0.825);z-index:998;transition:all ease .4s}
 
 .sideMenu,.sidebarNavigation{z-index:999;margin-bottom:0}
 
@@ -43,7 +43,7 @@ padding-bottom: 8px;
 
 .current{
   font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
+  font-weight: 600;
   padding: 1rem 1.75rem;
   padding-right: 15px;
   padding-left: 0px;
@@ -133,8 +133,10 @@ padding-bottom: 8px;
 .navbar-inverse .navbar-nav>li>a{
     color: white;
     transition-duration: 350ms;
+    font-size: 16px;
+    letter-spacing: 1.35px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
+    font-weight: 600;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover{
@@ -198,6 +200,8 @@ a:hover{
 .navbar-light .navbar-nav .nav-link {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 1.5px;
   color: white;
   margin-left: 22px;
 }
@@ -245,7 +249,8 @@ a:hover{
 
 .current{
   font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
+  font-weight: 600;
+  font-size: 16px;
   color:rgb(255, 255, 255);
   display:inline-block;
   position:relative;
